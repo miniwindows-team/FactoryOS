@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" Revision="1" SchemaVersion="1.3">
+  <!-- Include DCHU Driver INFs here. -->
+  <!-- OEM INFs and related collateral should go under %WSKWorkspaceRoot%\DCHUDrivers -->
+  <Drivers>
+    <!-- Unconditionally included drivers go under BaseDriverPackages -->
+    <BaseDriverPackages>
+      <!-- <DriverPackageFile Path="%WSKWorkspaceRoot%\DCHUDrivers" Name="Contoso.inf" /> -->
+    </BaseDriverPackages>
+
+    <!-- FeatureID included drivers go under DriverFeatures.
+         They must be referenced in the OEMInput file to be included in the image. -->
+    <DriverFeatures>
+      <!-- <DriverPackageFile Path="%WSKWorkspaceRoot%\DCHUDrivers" Name="Contoso.inf" >
+        <FeatureID>CONTOSO_DRIVER</FeatureID>
+      </DriverPackageFile> -->
+    </DriverFeatures>
+  </Drivers>
+</FeatureManifest>

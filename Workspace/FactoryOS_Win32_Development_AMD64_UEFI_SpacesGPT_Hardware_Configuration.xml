@@ -1,0 +1,5 @@
+<Configuration>
+  <ProductName>FactoryOSArgon</ProductName>
+  <Architecture>AMD64</Architecture>
+  <OEMInput>C:\FactoryWorkSpace\FactoryOS_Win32_Development_AMD64_UEFI_SpacesGPT_Hardware.xml</OEMInput>
+</Configuration>

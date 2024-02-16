@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeatureManifest 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate" Revision="1" SchemaVersion="1.3">
+  <AppX>
+    <AppXPackages>
+      <!-- Add appx files to this FM. Optional apps must be referenced in the OEMInput file by ID to be included in the image. -->
+      <!-- Microsoft appx files are under $(mspackageroot)\Appx -->
+      <PackageFile Path="$(mspackageroot)\Appx\Calculator" Name="Microsoft.WindowsCalculator_8wekyb3d8bbwe.appxbundle" LicenseFile="Microsoft.WindowsCalculator_8wekyb3d8bbwe.xml" ID="Microsoft.WindowsCalculator_8wekyb3d8bbwe" Optional="true" />
+      <PackageFile Path="$(mspackageroot)\Appx\Frameworks" CPUType="x86;amd64" Name="Microsoft.VCLibs.x86.14.00.appx" ID="Microsoft.VCLibs.140.00_8wekyb3d8bbwe" Optional="false" />
+      <PackageFile Path="$(mspackageroot)\Appx\Frameworks" CPUType="amd64" Name="Microsoft.VCLibs.x64.14.00.appx" ID="Microsoft.VCLibs.140.00_8wekyb3d8bbwe" Optional="false" />
+      <PackageFile Path="$(mspackageroot)\Appx\Frameworks" CPUType="arm;arm64" Name="Microsoft.VCLibs.arm.14.00.appx" ID="Microsoft.VCLibs.140.00_8wekyb3d8bbwe" Optional="false" />
+      <PackageFile Path="$(mspackageroot)\Appx\Frameworks" CPUType="arm64" Name="Microsoft.VCLibs.arm64.14.00.appx" ID="Microsoft.VCLibs.140.00_8wekyb3d8bbwe" Optional="false" />
+
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" CPUType="x86;amd64" Name="Microsoft.UI.Xaml.x86.2.4.appx" ID="Microsoft.UI.Xaml.2.4_8wekyb3d8bbwe" Optional="false" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" CPUType="arm;arm64" Name="Microsoft.UI.Xaml.arm.2.4.appx" ID="Microsoft.UI.Xaml.2.4_8wekyb3d8bbwe" Optional="false" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" CPUType="amd64" Name="Microsoft.UI.Xaml.x64.2.4.appx" ID="Microsoft.UI.Xaml.2.4_8wekyb3d8bbwe" Optional="false" />
+      <PackageFile Path="$(mspackageroot)\appx\frameworks" CPUType="arm64" Name="Microsoft.UI.Xaml.arm64.2.4.appx" ID="Microsoft.UI.Xaml.2.4_8wekyb3d8bbwe" Optional="false" />
+
+      <!-- OEM appx files should go under %WSKWorkspaceRoot%\Apps -->
+      <!-- License files are only required for store signed apps. -->
+      <!-- If Optional="true" the app ID must be referenced in OEMInput for it to be included in the image. -->
+      <!-- <PackageFile Path="%WSKWorkspaceRoot%\Apps\ContosoApp" Name="Contoso.Sampleapp_8wekyb3d8bbwe.appxbundle" LicenseFile="Contoso.Sampleapp_8wekyb3d8bbwe.xml" ID="Contoso.Sampleapp_8wekyb3d8bbwe" Optional="true" />  -->
+    </AppXPackages>
+  </AppX>
+</FeatureManifest>
